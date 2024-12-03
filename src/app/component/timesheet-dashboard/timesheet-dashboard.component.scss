@@ -1,0 +1,14 @@
+header {
+    background-color: #edf5ff !important;
+    z-index: 100000;
+}
+
+:host ::ng-deep {
+    .mdc-text-field--filled:not(.mdc-text-field--disabled) {
+        background-color: transparent !important;
+    }
+
+    .mat-mdc-text-field-wrapper:hover .mat-mdc-form-field-focus-overlay {
+        opacity: 0 !important;
+    }
+}

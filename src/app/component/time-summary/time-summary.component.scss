@@ -1,0 +1,29 @@
+.donut-canvas {
+    font-family: var(--bs-font-sans-serif);
+    display: block;
+    margin: 20px auto;
+    max-height: 300px;
+    max-width: 300px;
+}
+
+.pie-chart-canvas {
+    display: block;
+    margin: 20px auto;
+    max-height: 600px;
+    max-width: 600px;
+    overflow: visible;
+}
+
+// :host ::ng-deep {
+//     .mat-mdc-header-row {
+//         position: relative !important;
+//         z-index: -1 !important;
+//     }
+// }
+
+@media (max-width: 1180px) {
+    ::ng-deep .donut-canvas {
+        height: 230px !important;
+        width: 230px !important;
+    }
+}

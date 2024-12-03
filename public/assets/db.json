@@ -1,0 +1,330 @@
+{
+  "activityTracking": {
+    "overallStats": {
+      "overallTrackerHrs": 12,
+      "overallTrackedWorkedHrs": 88
+    },
+    "chartData": [
+      {
+        "monthId": 1,
+        "cumulativeHours": 100,
+        "totalHours": 100
+      },
+      {
+        "monthId": 4,
+        "cumulativeHours": 180,
+        "totalHours": 80
+      },
+      {
+        "monthId": 6,
+        "cumulativeHours": 220,
+        "totalHours": 40
+      },
+      {
+        "monthId": 7,
+        "cumulativeHours": 300,
+        "totalHours": 80
+      },
+      {
+        "monthId": 8,
+        "cumulativeHours": 543,
+        "totalHours": 243
+      },
+      {
+        "monthId": 9,
+        "cumulativeHours": 818,
+        "totalHours": 275
+      },
+      {
+        "monthId": 10,
+        "cumulativeHours": 1168,
+        "totalHours": 350
+      }
+    ],
+    "months": [
+      {
+        "monthId": 1,
+        "month": "Jan-24"
+      },
+      {
+        "monthId": 4,
+        "month": "Apr-24"
+      },
+      {
+        "monthId": 6,
+        "month": "Jun-24"
+      },
+      {
+        "monthId": 7,
+        "month": "Jul-24"
+      },
+      {
+        "monthId": 8,
+        "month": "Aug-24"
+      },
+      {
+        "monthId": 9,
+        "month": "Sep-24"
+      },
+      {
+        "monthId": 10,
+        "month": "Oct-24"
+      }
+    ]
+  },
+  "timesheetSummary": {
+    "summary": {
+      "startDate": "2024-01-01",
+      "endDate": "2024-12-31",
+      "missingTimesheetsCount": 194
+    },
+    "charts": {
+      "pieChart": [
+        {
+          "name": "Anne User",
+          "value": 34,
+          "color": "#A239CA"
+        },
+        {
+          "name": "John Doé",
+          "value": 37,
+          "color": "#4C8DF5"
+        },
+        {
+          "name": "Kaitlyn Holt",
+          "value": 39,
+          "color": "#B370B0"
+        },
+        {
+          "name": "Patrick Connor",
+          "value": 39,
+          "color": "#71D0FF"
+        },
+        {
+          "name": "Sophia",
+          "value": 3,
+          "color": "#77DD77"
+        }
+      ],
+      "donutChart": {
+        "acceptedTimesheets": {
+          "percentage": 13,
+          "numerator": 13,
+          "denominator": 100
+        },
+        "createdTimesheets": {
+          "percentage": 13,
+          "numerator": 13,
+          "denominator": 100
+        }
+      }
+    },
+    "columns": [
+      "Name",
+      "Unconfirmed Timesheets",
+      "Confirmed Timesheets",
+      "Missing Timesheets"
+    ],
+    "userTable": [
+      {
+        "name": "Anne User",
+        "unconfirmedTimesheets": 9,
+        "confirmedTimesheets": 0,
+        "missingTimesheets": 34
+      },
+      {
+        "name": "John Doé",
+        "unconfirmedTimesheets": 6,
+        "confirmedTimesheets": 0,
+        "missingTimesheets": 37
+      },
+      {
+        "name": "Kaitlyn Holt",
+        "unconfirmedTimesheets": 4,
+        "confirmedTimesheets": 0,
+        "missingTimesheets": 39
+      },
+      {
+        "name": "Patrick Connor",
+        "unconfirmedTimesheets": 4,
+        "confirmedTimesheets": 0,
+        "missingTimesheets": 39
+      },
+      {
+        "name": "Sophia",
+        "unconfirmedTimesheets": 1,
+        "confirmedTimesheets": 0,
+        "missingTimesheets": 3
+      },
+      {
+        "name": "Sredio Testing",
+        "unconfirmedTimesheets": 1,
+        "confirmedTimesheets": 0,
+        "missingTimesheets": 42
+      }
+    ]
+  },
+  "projectHours": {
+    "summary": {
+      "startDate": "2024-01-01",
+      "endDate": "2024-12-31"
+    },
+    "projects": [
+      {
+        "projectId": 1,
+        "projectName": "Creator",
+        "hours": 220,
+        "color": "#5A87C1"
+      },
+      {
+        "projectId": 2,
+        "projectName": "Animations Project",
+        "hours": 200,
+        "color": "#C85085"
+      },
+      {
+        "projectId": 3,
+        "projectName": "Project 1",
+        "hours": 180,
+        "color": "#E61E32"
+      },
+      {
+        "projectId": 4,
+        "projectName": "Client X",
+        "hours": 150,
+        "color": "#4C8DF5"
+      },
+      {
+        "projectId": 5,
+        "projectName": "Node Network",
+        "hours": 100,
+        "color": "#5733E6"
+      },
+      {
+        "projectId": 6,
+        "projectName": "Test Status",
+        "hours": 80,
+        "color": "#6B6E70"
+      },
+      {
+        "projectId": 7,
+        "projectName": "Server Clustering",
+        "hours": 60,
+        "color": "#3F7095"
+      },
+      {
+        "projectId": 8,
+        "projectName": "Redis Cache",
+        "hours": 50,
+        "color": "#C65065"
+      },
+      {
+        "projectId": 9,
+        "projectName": "Multi-streams",
+        "hours": 40,
+        "color": "#B36DB1"
+      },
+      {
+        "projectId": 10,
+        "projectName": "Example Project",
+        "hours": 20,
+        "color": "#9D65C9"
+      }
+    ]
+  },
+  "sredSummary": {
+    "summary": {
+      "startDate": "2024-01-01",
+      "endDate": "2024-12-31"
+    },
+    "columns": [
+      "Name",
+      "Tracking Score %",
+      "Total Worked Hours",
+      "Total Tracked Hours",
+      "New",
+      "Fiber",
+      "FD Test",
+      "Total SR&ED Hours",
+      "SR&ED %"
+    ],
+    "rows": [
+      {
+        "name": "Sredio Testing",
+        "trackingScore": 2,
+        "totalWorkedHours": 1935,
+        "totalTrackedHours": 40,
+        "new": 40,
+        "fiber": 40,
+        "fdTest": 0,
+        "totalSredHours": 40,
+        "sredPercentage": 100
+      },
+      {
+        "name": "Anne User",
+        "trackingScore": 18,
+        "totalWorkedHours": 1935,
+        "totalTrackedHours": 350,
+        "new": 80,
+        "fiber": 80,
+        "fdTest": 0,
+        "totalSredHours": 40,
+        "sredPercentage": 22.9
+      },
+      {
+        "name": "Kaitlyn Holt",
+        "trackingScore": 6,
+        "totalWorkedHours": 1935,
+        "totalTrackedHours": 118.3,
+        "new": 0,
+        "fiber": 0,
+        "fdTest": 0,
+        "totalSredHours": 0,
+        "sredPercentage": 0
+      },
+      {
+        "name": "Patrick Connor",
+        "trackingScore": 8,
+        "totalWorkedHours": 1935,
+        "totalTrackedHours": 159.9,
+        "new": 80,
+        "fiber": 0,
+        "fdTest": 0,
+        "totalSredHours": 40,
+        "sredPercentage": 75
+      },
+      {
+        "name": "Sophia",
+        "trackingScore": 4,
+        "totalWorkedHours": 1845,
+        "totalTrackedHours": 79.9,
+        "new": 0,
+        "fiber": 0,
+        "fdTest": 0,
+        "totalSredHours": 40,
+        "sredPercentage": 50.1
+      },
+      {
+        "name": "John Doé",
+        "trackingScore": 16,
+        "totalWorkedHours": 1935,
+        "totalTrackedHours": 300,
+        "new": 0,
+        "fiber": 180,
+        "fdTest": 0,
+        "totalSredHours": 220,
+        "sredPercentage": 73.3
+      }
+    ],
+    "totals": {
+      "trackingScore": 12,
+      "totalWorkedHours": 9855,
+      "totalTrackedHours": 1008.2,
+      "new": 380,
+      "fiber": 40,
+      "fdTest": 0,
+      "totalSredHours": 500,
+      "sredPercentage": 61.9
+    }
+  }
+}

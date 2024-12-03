@@ -1,0 +1,32 @@
+<div class="chart-content-wrapper shadow p-4 min-h-30 rounded-3">
+    <div class="chart-data">
+        <div class="topbar d-flex align-items-start gap-3 border-bottom mb-4">
+            <div>
+                <p class="mt-1 mb-0">
+                    <span>
+                        2024-01-01 - 2024-12-31
+                    </span>
+                    <span class="d-flex align-items-center gap-2 fw-medium">
+                        <span class="text-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"
+                                fill="currentColor">
+                                <path d="M3 12H7V21H3V12ZM17 8H21V21H17V8ZM10 2H14V21H10V2Z"></path>
+                            </svg>
+                        </span>
+                        Project Hours
+                    </span>
+                </p>
+            </div>
+        </div>
+
+        <!-- BAR CHART START -->
+         <div class="row">
+            <div class="col-12">
+                <div class="project-hours-chart">
+                    <canvas #projectHoursBarChartCanvas></canvas>
+                </div>
+            </div>
+         </div>
+        <!-- BAR CHART END -->
+    </div>
+</div>

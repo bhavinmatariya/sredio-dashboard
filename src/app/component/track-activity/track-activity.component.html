@@ -1,0 +1,72 @@
+<div class="chart-content-wrapper shadow p-4 min-h-30 rounded-3">
+    <div class="d-flex align-items-start justify-content-start gap-3">
+        <div class="chart-data">
+            <p class="d-flex align-items-center gap-2 fw-semibold">
+                <span class="d-flex align-items-center text-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"
+                        fill="currentColor">
+                        <path
+                            d="M5 3V19H21V21H3V3H5ZM20.2929 6.29289L21.7071 7.70711L16 13.4142L13 10.415L8.70711 14.7071L7.29289 13.2929L13 7.58579L16 10.585L20.2929 6.29289Z">
+                        </path>
+                    </svg>
+                </span>
+                <span>Activity Tracking</span>
+            </p>
+
+            <!-- ADD HERE DOUGHNUT CHART -->
+
+            <div>
+                <canvas class="donut-canvas" #donutChartCanvas></canvas>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <!-- ADD BAR CHART HERE -->
+                <div class="h-100 w-100">
+                    <!-- <canvas id="myChart"></canvas> -->
+                    <canvas class="bar-line-chart-canvas" #barLineChartCanvas></canvas>
+                </div>
+            </div>
+            <div class="col-12">
+                <!-- TABLE -->
+                <div class="activity-table-container">
+                    <table class="activity-table" mat-table [dataSource]="dataSource" matSort>
+                        <!-- Dynamic Columns -->
+                        <ng-container *ngFor="let column of displayedColumns" [matColumnDef]="column">
+                            <th mat-header-cell *matHeaderCellDef mat-sort-header style="font-weight: bold; letter-spacing: 1px; text-transform: capitalize;">
+                                {{ column === 'type' ? '' : column }}
+                            </th>
+                            <td mat-cell *matCellDef="let element"> {{ element[column] || '-' }} </td>
+                        </ng-container>
+
+                        <!-- Header and Rows -->
+                        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- DROPDOWN START -->
+    <div class="d-flex align-items-center justify-content-between">
+        <div class="dropdown">
+            <button class="btn dropdown-toggle border-bottom" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Tracked hours/Overall Working Hours
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <button class="btn btn-primary fw-medium">Save</button>
+        </div>
+    </div>
+    <!-- DROPDOWN END -->
+</div>

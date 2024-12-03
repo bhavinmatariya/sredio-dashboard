@@ -1,0 +1,118 @@
+<div class="timesheet-wrapper">
+
+    <!-- HEADER START -->
+    <header class="position-sticky top-0">
+        <div class="navbar py-2 px-5">
+
+            <div class="d-flex align-items-center gap-3">
+                <!-- LOGO START -->
+                <div class="logo">
+                    <a href="javascript:void()"
+                        class="d-flex align-items-center justify-content-between font-20 fw-bold">
+                        <span class="d-inline-block lh-1">SREDI</span>
+                        <span class="fs-5 d-inline-flex align-items-center justify-content-center mt-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28"
+                                fill="currentColor">
+                                <path
+                                    d="M5.33053 15.9288C5.115 14.9914 5.00054 14.0103 5.00054 12.9999C5.00054 7.91198 7.90319 3.5636 12.0005 1.81799C16.0979 3.5636 19.0005 7.91198 19.0005 12.9999C19.0005 14.0103 18.8861 14.9914 18.6706 15.9288L20.6907 17.7245C20.8704 17.8842 20.9109 18.1493 20.7872 18.3555L18.33 22.4508C18.1879 22.6876 17.8808 22.7644 17.644 22.6223C17.609 22.6013 17.5766 22.576 17.5477 22.5471L15.2934 20.2928C15.1059 20.1053 14.8515 19.9999 14.5863 19.9999H9.41476C9.14954 19.9999 8.89519 20.1053 8.70765 20.2928L6.45337 22.5471C6.2581 22.7424 5.94152 22.7424 5.74626 22.5471C5.71735 22.5182 5.6921 22.4859 5.67107 22.4508L3.21385 18.3555C3.09014 18.1493 3.13071 17.8842 3.31042 17.7245L5.33053 15.9288ZM12.0005 12.9999C13.1051 12.9999 14.0005 12.1045 14.0005 10.9999C14.0005 9.89537 13.1051 8.99994 12.0005 8.99994C10.896 8.99994 10.0005 9.89537 10.0005 10.9999C10.0005 12.1045 10.896 12.9999 12.0005 12.9999Z">
+                                </path>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+                <!-- LOGO END -->
+
+                <!-- RANGE PICKER START -->
+                <div>
+                    <mat-form-field>
+                        <mat-label>Enter a date range</mat-label>
+                        <mat-date-range-input [rangePicker]="picker">
+                            <input matStartDate placeholder="Start date">
+                            <input matEndDate placeholder="End date">
+                        </mat-date-range-input>
+                        <mat-hint>MM/DD/YYYY – MM/DD/YYYY</mat-hint>
+                        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-date-range-picker #picker></mat-date-range-picker>
+                    </mat-form-field>
+                </div>
+                <!-- RANGE PICKER END -->
+            </div>
+
+            <!-- SUPPORT REQUEST START -->
+            <div>
+                <div class="text-center">
+                    <p class="mb-0 fw-semibold">For support, request and/or suggestions please email us</p>
+                    <a href="mailto:success@sred.io" class="d-block fw-semibold">successsred.io</a>
+                </div>
+            </div>
+            <!-- SUPPORT REQUEST END -->
+
+            <!-- HAMBURGER BUTTON START -->
+            <div class="collapse-menu">
+                <div class="d-flex align-items-center justify-content-center text-primary cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                        fill="currentColor">
+                        <path d="M3 4H21V6H3V4ZM9 11H21V13H9V11ZM3 18H21V20H3V18Z"></path>
+                    </svg>
+                </div>
+            </div>
+            <!-- HAMBURGER BUTTON END -->
+        </div>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- MAIN-CONTENT START -->
+    <div class="main-content-wrapper px-5 py-3">
+        <div>
+            <p class="text-end fw-medium">SR &nbsp;&amp;&nbsp; ED 2015</p>
+        </div>
+
+        <!-- TOPBAR START -->
+        <div class="topbar d-flex align-items-start justify-content-between">
+            <div class="date-details">
+                <h3 class="d-flex align-items-center gap-2">
+                    <span class="d-flex align-items-center justify-content-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"
+                            fill="currentColor">
+                            <path
+                                d="M9 1V3H15V1H17V3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H7V1H9ZM20 11H4V19H20V11ZM8 13V15H6V13H8ZM13 13V15H11V13H13ZM18 13V15H16V13H18ZM7 5H4V9H20V5H17V7H15V5H9V7H7V5Z">
+                            </path>
+                        </svg>
+                    </span>
+                    <span>
+                        2024-01-01 - 2024-12-31
+                    </span>
+                </h3>
+                <p>
+                    <span class="fw-semibold">Active Integrations: &nbsp;</span>
+                    <span>Bigbucket, Github, Azure, Harvest, ClickUp, Airtable, Bigtime</span>
+                </p>
+            </div>
+
+            <div>
+                <button class="btn btn-primary fw-semibold">Refresh Data</button>
+            </div>
+        </div>
+        <!-- TOPBAR END -->
+
+        <!-- CARDS START -->
+        <div class="chart-data mb-3">
+            <app-track-activity></app-track-activity>
+        </div>
+
+        <div class="chart-data mb-3">
+            <app-time-summary></app-time-summary>
+        </div>
+
+        <div class="chart-data mb-3">
+            <app-project-hours></app-project-hours>
+        </div>
+
+        <div class="chart-data mb-3">
+            <app-sr-ed-summary></app-sr-ed-summary>
+        </div>
+        <!-- CARDS END -->
+
+    </div>
+    <!-- MAIN-CONTENT END -->
+</div>
